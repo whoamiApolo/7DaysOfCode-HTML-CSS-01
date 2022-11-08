@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html { 
+    font-size: 62.5%;
+}
+
+:root {
+    --text-white: #fff;
+    --text-nav-link: #A7A8A6;
+    --cor-bg: black;
+}
+
+header {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3rem 6.8rem 5rem;
+    background: linear-gradient(black, transparent);
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+header nav .nav-logo {
+    width: 10rem;
+}
+
+header nav img {
+    width: 100%;
+    left: 0;
+
+}
+
+header nav .nav-links {
+    display: flex;
+    gap: 1.4rem;
+    gap: .8rem;
+    list-style: none;
+}
+
+header nav .nav-links li a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-nav-link);
+    font-weight: bold;
+
+}
+
+header nav .nav-links li .bold {
+    color: var(--text-white);
+}
+
+header .nav-icons {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav-icons img {
+    width: 2.4rem;
+    color: var(--text-white);
+}
+
+header .nav-icons .small {
+        color: red;
+    width: 1.8rem;
+}
+
+#banner {
+    position: relative;
+    height: 79rem;
+    background-image: url(/assets/banner.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+#banner .title-content {
+    position: absolute;
+    top: 20rem;
+    font-size: 1.6rem;
+    width: 51rem;
+    color: var(--text-white);
+    font-weight: 500;
+    padding-left: 6.8rem;
+}
+
+#banner .title-content .title-img {
+    width: 40rem;
+}
+
+#banner .title-content button {
+    padding: .8rem 1.6rem .8rem 5rem;
+    border-radius: .4rem;
+    border: none;
+
+    color: white;
+    cursor: pointer;
+    height: 4.3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#banner .title-content .descriptive {
+    margin: 1rem 0 2.5rem;
+}
+
+#banner .title-content .play {
+    width: 14.4rem;
+    color: black;
+    background: white;
+    margin-right: 1rem;
+}
+
+#banner .title-content .play-content {
+    position: relative;
+    display: inline-block;
+}
+
+#banner .title-content .info-content {
+    position: relative;
+    display: inline-block;
+}
+
+#banner .title-content .info-content img {
+    width: 2.4rem;
+    position: absolute;
+    top: calc(50% - 1.2rem);
+    left: 2.5rem;
+}
+
+#banner .title-content .play-content img {
+    width: 2.4rem;
+    position: absolute;
+    top: calc(50% - 1.2rem);
+    left: 2.5rem;
+}
+
+
+#banner .title-content .more-info {
+    background: rgba(109,109, 110, 0.7);
+    width: 22.5rem;
+}
+
+#my-list {
+    background: linear-gradient(transparent, var(--cor-bg) 40%);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+#my-list h2 {
+    color: #fff;
+    padding: 0 0 1rem 6.8rem;
+    font-size: 1.6rem;
+}
+
+#my-list img {
+    min-height: 10rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+}
+
+#my-list .slides {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    padding: 0 6.8rem;
+    gap: .7rem;
+    width: 100%;
+}
+
+#others-movies {
+    background: var(--cor-bg);
+    padding-top: 4rem;
+}
+
+#others-movies .movies-content h2 {
+    color: #fff;
+    padding: 0 0 1rem 6.8rem;
+    font-size: 1.6rem;
+}
+
+.movies-content .movies {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 0 6.8rem;
+    gap: .7rem;
+}
+
+.movies-content .movies img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 10rem;
+    object-fit: cover;
+}
+
+footer {
+    background: var(--cor-bg);
+    padding: 0 6.8rem;
+}
+
+footer .sociais-list {
+    padding: 4rem 0;
+    display: flex;
+    gap: 3rem;
+    color: white;
+}
+
+footer .footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    color: var(--text-nav-link);
+    font-size: 1.4rem;
+}
+
+footer .footer-links ul {
+
+    list-style: none;
+    line-height: 2.5;
+}
+
+footer .footer-info {
+    color: var(--text-nav-link);
+    font-size: 1.1rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer span:first-of-type {
+    font-size: 1.3rem;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    width: fit-content;
+    padding: .7rem;
+    border: .1rem solid var(--text-nav-link);
+}
